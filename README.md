@@ -12,6 +12,7 @@ project template for structuring folders and files in a nodeJS api
   - services
   - models
   - infrastructure
+  - pubsub
   - tests
   - utils
 
