@@ -21,7 +21,7 @@ It shall contain the **entire code base of the application**. Separate from any 
 
 ### src/api
 
-Any code related to the **entry or exit point of the application** shall be stored in this folder. Understanding as input or output technologies such as HTTP REST, Graphql, GRPC, Kafka...etc.
+Any code related to the **entry or exit point of the application** shall be stored in this folder. Understanding as input or output technologies such as HTTP REST, Graphql, GRPC...etc.
 
 ### src/config
 
@@ -39,10 +39,14 @@ This folder will contain the **pure typescript objects that we will handle throu
 
 In this folder shall be stored the code related to any type of **client or connector with a persistence system** used by the application itself. For example, mongoDB clients, redis, postgreSQL... etc.
 
+### src/pubsub
+
+Code related to **connections to message broker or pub-sub tools** will be stored in this folder. For example, Kafka, redis (pub-sub), RabbitMQ...etc.
+
 ### src/utils
 
 This folder will contain the **code that is used more generally throughout the application**, such as type converters, text parsers, encryption...etc.
 
 ### src/tests
 
-Folder containing the **test code of the application**, containing both unit and integration tests.
+Folder containing the **integration test code of the application**, the unit tests should be placed in the same folder of the code that you are testing.
